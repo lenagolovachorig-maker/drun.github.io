@@ -1,0 +1,171 @@
+/* Аватар как в Telegram */
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary);
+    display: block;
+}
+
+.avatar-small {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.avatar-large {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--primary);
+    display: block;
+    margin: 0 auto; /* Центрирование */
+}
+
+/* Контейнер для аватара по центру */
+.avatar-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.avatar-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    border: 4px solid var(--white);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+body.dark-theme .avatar-placeholder {
+    border-color: #0f3460;
+}
+/* Круглый аватар по центру */
+.avatar-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.avatar-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50% !important;
+    object-fit: cover;
+    border: 4px solid #6c5ce7;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.avatar-placeholder-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin: 0 auto;
+}
+
+body.dark-theme .avatar-placeholder-circle {
+    border-color: #0f3460;
+}
+/* Комментарии */
+.comment {
+    background: rgba(0,0,0,0.02);
+    padding: 12px;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    gap: 12px;
+}
+
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important;
+    object-fit: cover;
+    border: 2px solid #6c5ce7;
+    flex-shrink: 0;
+}
+
+.comment-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.comment-author strong {
+    color: #6c5ce7;
+}
+
+body.dark-theme .comment {
+    background: rgba(255,255,255,0.05);
+}
+
+.comment-form textarea {
+    margin-bottom: 10px;
+    width: 100%;
+}
+/* Modal для регистрации */
+.register-modal {
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-btn:hover {
+    color: #ff7675;
+    transition: 0.3s;
+}
+
+.password-requirements {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.alert-success {
+    background: #00b894;
+    color: white;
+}
+
+.alert-error {
+    background: #ff7675;
+    color: white;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.login-link a {
+    color: #6c5ce7;
+    text-decoration: none;
+    font-weight: bold;
+}
